@@ -1,0 +1,284 @@
+/* Basic Reset & Body Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ff9900;
+    /* Light gray background for the page */
+    color: #333;
+    /* Default text color */
+    line-height: 1.6;
+    background-color: #bdfdf9; /* fallback color */
+    background-image: url('background.jpg'); /* path to your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h2 {
+     color: #0573e9; /* Change this color as you like */
+    label {
+     color: #054a90; /* Label color */
+}
+}
+}
+
+.container {
+    width: 90%;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5900ff;
+    /* Light gray border */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    gap: 30px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto;
+}
+
+main section:nth-of-type(1) {
+    max-height: max-content;
+}
+
+main section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+/* Card styling for sections */
+.card {
+    background-color: #fef39e;
+    /* White background for cards */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    /* Subtle shadow */
+    border: 1px solid #0281ff;
+    /* Light border for cards */
+
+}
+
+.card #books-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#books-list>div {
+    background-color: #f1f7fd;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.08);
+    padding: 1.6em;
+}
+
+.card h3 {
+    font-size: 2rem;
+    color: #000000;
+    /* Darker gray for section titles */
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* Form Styling */
+form div {
+    margin-bottom: 18px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95em;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: calc(100% - 22px);
+    /* Full width minus padding and border */
+    padding: 10px;
+    border: 1px solid #ced4da;
+    /* Gray border */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #80bdff;
+    /* Light blue on focus */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #6c757d;
+    /* Default gray button */
+    border: 1px solid transparent;
+    padding: 10px 18px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+        box-shadow 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #f07808;
+    /* Blue for primary actions */
+    border-color: #ff0000;
+    width: 100%;
+    /* Make form submit button full width */
+}
+
+.btn-primary:hover {
+    background-color: #ff0000;
+    border-color: #ff9500;
+}
+
+.btn-secondary {
+    background-color: #000000;
+    /* Gray for secondary actions */
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #000000;
+    border-color: #545b62;
+}
+
+/* Search Controls */
+.search-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.search-controls input[type="text"] {
+    flex-grow: 1;
+    /* Input takes available space */
+}
+
+/* Placeholder Text */
+.placeholder-text {
+    color: #868e96;
+    /* Lighter gray for placeholder */
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #6c757d;
+    /* Gray footer text */
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Modal Styles */
+/* .modal {
+  width: 100%;
+  height: 100%;
+} */
+
+/* .modal.show {
+  display: flex;
+} */
+
+.modal-content {
+    background-color: #ffffff;
+    /* White modal background */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 4px;
+    /* max-width: 450px; */
+    width: 100%;
+    text-align: center;
+    /* position: relative; */
+    /* border: 1px solid #dee2e6; */
+}
+
+.modal-content h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #343a40;
+    /* Dark gray for modal title */
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    color: #495057;
+    /* Slightly lighter gray for modal text */
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.modal-content .btn {
+    /* Style the close button within the modal */
+    background-color: #007bff;
+    border-color: #007bff;
+    min-width: 80px;
+}
+
+.modal-content .btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .card h2 {
+        font-size: 1.4em;
+    }
+
+    .search-controls {
+        flex-direction: column;
+    }
+
+    .search-controls input[type="text"],
+    .search-controls button {
+        width: 100%;
+        box-sizing: border-box;
+        /* Ensure padding doesn't break layout */
+    }
+}
